@@ -31,7 +31,7 @@ public class CreatorTaskGUI extends JFrame {//создание задачи че
 
         panel.add(hold);
         panel.add(off);
-        setContentPane(panel);
+        getContentPane().add(panel,"South");
         setSize(600, 300);
         setVisible(true);
 

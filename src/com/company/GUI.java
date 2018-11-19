@@ -21,9 +21,9 @@ public class GUI extends JFrame
     private JMenu m = new JMenu("Настройки");
     private JMenu m1 = new JMenu("Настройки сохранения");
     private JMenu m2 = new JMenu("Настройки оповещения");
-    private JRadioButtonMenuItem alert1 = new JRadioButtonMenuItem("Базовое оповещение(вывод окна)");
-    private JRadioButtonMenuItem alert2 = new JRadioButtonMenuItem("Оповещение сигналом");
-    private JRadioButtonMenuItem alert3 = new JRadioButtonMenuItem("Оповещение другой программой");
+    private JRadioButtonMenuItem alert1 = new JRadioButtonMenuItem("Вывод окна");
+    private JRadioButtonMenuItem alert2 = new JRadioButtonMenuItem("Cигнал + вывод в консоль");
+    private JRadioButtonMenuItem alert3 = new JRadioButtonMenuItem("Открытие другой программы");
     private JRadioButtonMenuItem save1 = new JRadioButtonMenuItem("Сохранение в виде текстового файла");
     private JRadioButtonMenuItem save2 = new JRadioButtonMenuItem("Сохранение в виде сериализованного объекта");
     private JRadioButtonMenuItem save3 = new JRadioButtonMenuItem("Сохранение в виде сжатого текстового файла(zip)");
@@ -66,6 +66,7 @@ public class GUI extends JFrame
             tableModel.addRow(new Object[] {tasks.getTask(i).getName(), tasks.getTask(i).getDescript(), tasks.getTask(i).getDate(), tasks.getTask(i).getContact()});
         // Создание таблицы на основании модели данных
         table1 = new JTable(tableModel);
+        table1.setEnabled(false);
 
 
         // Создание кнопки добавления строки таблицы
