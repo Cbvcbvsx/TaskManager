@@ -5,7 +5,7 @@ import java.io.*;
 
 public class Save {
 
-    public static void writeTasks (TaskManager tasks, Writer out) //метод сохранения в файл
+    public static void writeTasks (Tasks tasks, Writer out) //метод сохранения в файл
     {
         try(PrintWriter pw = new PrintWriter(out))
         {

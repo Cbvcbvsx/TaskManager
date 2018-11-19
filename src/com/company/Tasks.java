@@ -1,15 +1,15 @@
 package com.company;
 
-public class TaskManager {
+public class Tasks {
 
     private Task [] tasks;
 
-    public TaskManager (Task [] tasks) //конструктор по массиву задач
+    public Tasks(Task [] tasks) //конструктор по массиву задач
     {
         this.tasks=tasks;
     }
 
-    public TaskManager (int num) // конструктор по кол-ву задач
+    public Tasks(int num) // конструктор по кол-ву задач
     {
         this.tasks=new Task [num];
     }

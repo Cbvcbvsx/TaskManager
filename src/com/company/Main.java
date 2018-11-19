@@ -1,12 +1,8 @@
 package com.company;
 
 import java.io.*;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Scanner;
-
-import static com.company.Save.writeTasks;
 
 public class Main {
 
@@ -31,7 +27,7 @@ public class Main {
       Task task1 = new Task ("Курсач","Очень срочно", new Date(), contact1);
       Task task2 = new Task ("ДЗ по радиотеху","Не сильно срочно", new Date(), contact2);
       Task [] arrTask = new Task[] {task1,task2};
-      TaskManager tasks= new TaskManager(arrTask);
+      Tasks tasks= new Tasks(arrTask);
       GUI app = new GUI(tasks);
    }
 }

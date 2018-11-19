@@ -33,7 +33,7 @@ public class GUI extends JFrame
 
 
 
-    public GUI(TaskManager tasks) {
+    public GUI(Tasks tasks) {
         JFrame frame = new JFrame("Планировщик задач");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(600,300);
@@ -48,12 +48,12 @@ public class GUI extends JFrame
         bg2.add(save2);
         bg2.add(save3);
         // добавление компонентов в разные части меню
-        m1.add(alert1);
-        m1.add(alert2);
-        m1.add(alert3);
-        m2.add(save1);
-        m2.add(save2);
-        m2.add(save3);
+        m2.add(alert1);
+        m2.add(alert2);
+        m2.add(alert3);
+        m1.add(save1);
+        m1.add(save2);
+        m1.add(save3);
         m.add(m1);
         m.add(m2);
         frame.getContentPane().add(BorderLayout.NORTH, mb);//добавление верхней панельки
@@ -73,10 +73,10 @@ public class GUI extends JFrame
         add.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // Номер выделенной строки
-                ArrayList <String> contact1 = new ArrayList();
+                ArrayList <String> contact1 = new ArrayList<String>();
                 contact1.add("ФИО");
                 int idx = table1.getSelectedRow();
-                new CreatorTask();
+                new CreatorTaskGUI();
                 tasks.addTask(idx+1,new Task("Новая задача №" + String.valueOf(table1.getRowCount()), "Описание", new Date(), contact1));
                 // Вставка новой строки после выделенной
                 tableModel.insertRow(idx+1, new String[] {
