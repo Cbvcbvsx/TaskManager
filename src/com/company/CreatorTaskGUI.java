@@ -1,20 +1,28 @@
 package com.company;
 
-import javax.swing.*;
-import java.awt.*;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.*;
+import java.awt.*;
+
 
 public class CreatorTaskGUI extends JFrame {//создание задачи через отдельное окно
     private JMenuBar mb = new JMenuBar();
     private JMenu m = new JMenu("Настройки");
+    private Component label1 = new JLabel("Название");
+    private Component label2 = new JLabel("Описание");
+    private Component label3 = new JLabel("Дата");
+    private Component label4 = new JLabel("Контакты");
+    private Component field1 = new JTextField(15);
+    private Component field2 = new JTextField(15);
+    private Component field3 = new JTextField(15);
+    private Component field4 = new JTextField(15);
+    public CreatorTaskGUI(JFrame frame) {
 
-    public CreatorTaskGUI() {
-        super("Событие ");
-        JPanel panel = new JPanel();
-        panel.setLayout(new FlowLayout());
         JButton hold = new JButton("Сохранить");
         JButton off = new JButton("Не сохранять");
+        JButton add = new JButton("Добавить");
         hold.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -29,11 +37,49 @@ public class CreatorTaskGUI extends JFrame {//создание задачи че
             }
         });
 
-        panel.add(hold);
-        panel.add(off);
-        getContentPane().add(panel,"South");
-        setSize(600, 300);
-        setVisible(true);
+        Container contentPane = getContentPane();
 
+        SpringLayout layout = new SpringLayout();
+        contentPane.setLayout(layout);
+        contentPane.add(hold);
+        contentPane.add(off);
+        contentPane.add(add);
+        contentPane.add(field1);
+        contentPane.add(label1);
+        contentPane.add(field2);
+        contentPane.add(label2);
+        contentPane.add(field3);
+        contentPane.add(label3);
+        contentPane.add(field4);
+        contentPane.add(label4);
+        layout.putConstraint(SpringLayout.WEST , label1, 10, SpringLayout.WEST , contentPane);
+        layout.putConstraint(SpringLayout.NORTH, label1, 25, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.NORTH, field1, 25, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.WEST , field1, 80, SpringLayout.WEST , contentPane);
+
+        layout.putConstraint(SpringLayout.WEST , label2, 10, SpringLayout.WEST , contentPane);
+        layout.putConstraint(SpringLayout.NORTH, label2, 55, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.NORTH, field2, 55, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.WEST , field2, 80, SpringLayout.WEST , contentPane);
+
+        layout.putConstraint(SpringLayout.WEST , label3, 10, SpringLayout.WEST , contentPane);
+        layout.putConstraint(SpringLayout.NORTH, label3, 85, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.NORTH, field3, 85, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.WEST , field3, 80, SpringLayout.WEST , contentPane);
+
+        layout.putConstraint(SpringLayout.WEST , label4, 10, SpringLayout.WEST , contentPane);
+        layout.putConstraint(SpringLayout.NORTH, label4, 115, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.NORTH, field4, 115, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.WEST , field4, 80, SpringLayout.WEST , contentPane);
+
+
+        layout.putConstraint(SpringLayout.NORTH, hold, 150, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.WEST, hold, 20, SpringLayout.WEST, contentPane);
+
+        layout.putConstraint(SpringLayout.NORTH, off, 150, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.WEST, off, 120, SpringLayout.WEST, contentPane);
+
+        setSize(350, 400);
+        setVisible(true);
     }
 }

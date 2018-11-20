@@ -10,9 +10,9 @@ public class Save {
         try(PrintWriter pw = new PrintWriter(out))
         {
             String s = "";
-            for(int i=0; i<tasks.getNum(); i++)// проходя по массиву задач записываем
+            for(int i=0; i<tasks.getNum(); i++)// проходя по массиву задач записываем//изменить на for each
             {
-                s+= tasks.getTask(i).getName() + ", " + tasks.getTask(i).getDescript() + ", " + tasks.getTask(i).getDate() + ", " + tasks.getTask(i).getContact() + "\n";
+                s+= tasks.getTask(i).getName() + ", " + tasks.getTask(i).getDescription() + ", " + tasks.getTask(i).getDate() + ", " + tasks.getTask(i).getContacts() + "\n";
             }
             pw.print(s);
         }

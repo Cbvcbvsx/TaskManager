@@ -6,24 +6,24 @@ import java.util.Date;
 
 public class Task {
     private String name;
-    private String descript;
+    private String description;
     private Date date;
-   private ArrayList <String> contact;
+   private ArrayList <String> contacts;
 
-    public Task(String name, String descript, Date date, ArrayList <String> contact)
+    public Task(String name, String description, Date date, ArrayList <String> contacts)
     {
         this.name=name;
-        this.descript=descript;
+        this.description=description;
         this.date=date;
-        this.contact=contact;
+        this.contacts=contacts;
     }
 
-    public String getDescript() { return this.descript; }
+    public String getDescription() { return this.description; }
     public String getName() { return this.name; }
     public Date getDate() { return this.date; }
-    public ArrayList <String> getContact() { return this.contact; }
+    public ArrayList <String> getContacts() { return this.contacts; }
     public void setName(String name) { this.name=name; }
-    public void setDescript(String descript) { this.descript=descript; }
+    public void setDescription(String description) { this.description=description; }
     public void setDate(Date date) { this.date=date; }
-    public void setContact(ArrayList <String> contact){ this.contact=contact; }
+    public void setContacts(ArrayList <String> contacts){ this.contacts=contacts; }
 }

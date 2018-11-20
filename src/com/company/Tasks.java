@@ -58,6 +58,26 @@ public class Tasks {
         catch(ArrayIndexOutOfBoundsException e) {System.err.println(e.getMessage());}
     }
 
+    public void addTaskByDate(Task task)//вставка задачи в отсортированный массив по времени
+    {
+        Task[] arr = new Task[tasks.length + 1];
+        boolean flag = false;
+        for (int i = 0; i < tasks.length; i++) {
+            if (tasks[i].getDate().before( task.getDate()))
+                arr[i] = tasks[i];
+            if (task.getDate().before( tasks[i].getDate()) & !flag) {
+                arr[i] = task;
+                flag=true;
+            }
+            else
+            {
+                if(task.getDate().before( tasks[i].getDate()))
+                    arr[i] = tasks[i-1];
+            }
+        }
+        this.tasks=arr;
+    }
+
     public void deleteTask(int num) //удаление задачи по номеру
     {
         try {
@@ -84,5 +104,21 @@ public class Tasks {
                 minDate = tasks[i];
         }
         return minDate;
+    }
+
+    public void sortByDate()
+    {
+        for(int i=0; i<tasks.length-1; i++)
+        {
+            for(int j=i+1; j<tasks.length; j++)
+            {
+                if(tasks[i].getDate().before( tasks[j].getDate()))
+                {
+                    Task temp=tasks[i];
+                    tasks[i]=tasks[j];
+                    tasks[j]=temp;
+                }
+            }
+        }
     }
 }
