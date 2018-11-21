@@ -67,26 +67,49 @@ public class GUI extends JFrame {
         for (int i = 0; i < tasks.getNum(); i++)
             tableModel.addRow(new Object[]{tasks.getTask(i).getName(), tasks.getTask(i).getDescription(), tasks.getTask(i).getDate(), tasks.getTask(i).getContacts()});
         // Создание таблицы на основании модели данных
-        table1 = new JTable(tableModel);
-        table1.setEnabled(false);
+        table1 = new JTable(tableModel)
+        {
+            @Override
+            public boolean isCellEditable ( int row, int column )// запрет изменения ячеек
+            {
+                return false;
+            }
+        };
+
+
 
 
         // Создание кнопки добавления строки таблицы
         JButton add = new JButton("Добавить");
         add.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // Номер выделенной строки
-                ArrayList<String> contact1 = new ArrayList<String>();
-                contact1.add("ФИО");
-                int idx = table1.getSelectedRow();
-                new CreatorTaskGUI(frame);
-                tasks.addTask(idx + 1, new Task("Новая задача №" + String.valueOf(table1.getRowCount()), "Описание", new Date(), contact1));
+                Task task=new Task();
+                new CreatorTaskGUI(frame, task);
+                int idx = tasks.addTaskByDate(task);
                 // Вставка новой строки после выделенной
-                tableModel.insertRow(idx + 1, new String[]{
-                        tasks.getTask(idx + 1).getName().toString(),
-                        tasks.getTask(idx + 1).getDescription().toString(),
-                        tasks.getTask(idx + 1).getDate().toString(),
-                        tasks.getTask(idx + 1).getContacts().toString()});
+                tableModel.insertRow(idx+1, new Object[]{
+                        tasks.getTask(idx).getName(),
+                        tasks.getTask(idx).getDescription(),
+                        tasks.getTask(idx).getDate(),
+                        tasks.getTask(idx).getContacts()});
+                //Сохранение изменений
+                try (Writer wr = new FileWriter("save.txt")) {
+                    writeTasks(tasks, wr);
+                } catch (IOException ioe) {
+                    System.err.println(ioe.getMessage());
+                }
+            }
+        });
+
+
+        JButton change = new JButton("Изменить");//настроить окошко ошибки, когда строка не выбрана
+        change.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                int idx = table1.getSelectedRow();
+                new ChangeTaskGUI(frame,tasks.getTask(idx));
+                tableModel.removeRow(idx);
+                tableModel.insertRow(idx, new Object[]{tasks.getTask(idx).getName(), tasks.getTask(idx).getDescription(),
+                        tasks.getTask(idx).getDate(), tasks.getTask(idx).getContacts()});
                 //Сохранение изменений
                 try (Writer wr = new FileWriter("save.txt")) {
                     writeTasks(tasks, wr);
@@ -98,7 +121,7 @@ public class GUI extends JFrame {
 
 
         // Создание кнопки удаления строки таблицы
-        JButton remove = new JButton("Удалить");
+        JButton remove = new JButton("Удалить");//настроить окошко ошибки, когда строка не выбрана
         remove.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // Номер выделенной строки
@@ -123,6 +146,7 @@ public class GUI extends JFrame {
         frame.getContentPane().add(contents);
         JPanel buttons = new JPanel();
         buttons.add(add);
+        buttons.add(change);
         buttons.add(remove);
         frame.getContentPane().add(buttons, "South");
 
@@ -175,8 +199,6 @@ public class GUI extends JFrame {
         });
 
 
-        // Вывод окна на экран
-        frame.setVisible(true);
     }
     private void removeTr() {
         sT.remove(iconTr);
@@ -193,6 +215,7 @@ public class GUI extends JFrame {
         } catch (AWTException ex) {
             ex.printStackTrace();
         }*/
+        frame.setVisible(true);
     }
 }
 

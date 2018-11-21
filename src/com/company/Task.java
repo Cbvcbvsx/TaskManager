@@ -17,6 +17,7 @@ public class Task {
         this.date=date;
         this.contacts=contacts;
     }
+    public Task(){}
 
     public String getDescription() { return this.description; }
     public String getName() { return this.name; }

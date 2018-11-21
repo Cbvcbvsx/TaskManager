@@ -7,41 +7,43 @@ import javax.swing.*;
 import java.awt.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Locale;
 import javax.swing.JFrame;
 
 
 
 
-public class CreatorTaskGUI extends JFrame {//создание задачи через отдельное окно
+public class ChangeTaskGUI extends JFrame {//создание задачи через отдельное окно
     private JMenuBar mb = new JMenuBar();
     private JMenu m = new JMenu("Настройки");
     private Component label1 = new JLabel("Название");
     private Component label2 = new JLabel("Описание");
     private Component label3 = new JLabel("Дата");
     private Component label4 = new JLabel("Контакты");
-    private Component field1 = new JTextField(15);
-    private Component field2 = new JTextField(15);
-    private Component field3 = new JTextField(15);
-    private Component field4 = new JTextField(15);
 
-    public CreatorTaskGUI(JFrame frame, Task task) {
+
+    public ChangeTaskGUI(JFrame frame, Task task) {
         JDialog dialog = new JDialog(frame, "Событие", true);
         JButton hold = new JButton("Сохранить");
         JButton off = new JButton("Не сохранять");
         JButton add = new JButton("Добавить");
+        Component field1 = new JTextField(task.getName(),15);
+        Component field2 = new JTextField(task.getDescription(),15);
+        Component field3 = new JTextField(task.getDate().toString(),15);
+        Component field4 = new JTextField(task.getContacts().toString(),15);
         hold.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                try {
-                    task.setName(((JTextField) field1).getText());
-                    task.setDescription(((JTextField) field2).getText());
-                    SimpleDateFormat format = new SimpleDateFormat("EEE MMM dd hh:mm:ss ZZZ yyyy", Locale.US);
-                    task.setDate((format.parse(((JTextField) field3).getText())));
-                    ArrayList<String> contact1 = new ArrayList();
-                    contact1.add(((JTextField) field4).getText());
-                    task.setContacts(contact1);
+                try{
+                task.setName(((JTextField) field1).getText());
+                task.setDescription(((JTextField) field2).getText());
+                SimpleDateFormat format = new SimpleDateFormat("EEE MMM dd hh:mm:ss ZZZ yyyy", Locale.US);
+                task.setDate((format.parse(((JTextField) field3).getText())));
+                ArrayList<String> contact1 = new ArrayList();
+                contact1.add(((JTextField) field4).getText());
+                task.setContacts(contact1);
                 }
-                catch(Exception ex) {ex.printStackTrace();}
+                catch (Exception ex) { ex.printStackTrace();}
                 dialog.dispose();
             }
         });
@@ -95,6 +97,7 @@ public class CreatorTaskGUI extends JFrame {//создание задачи че
 
         layout.putConstraint(SpringLayout.NORTH, off, 150, SpringLayout.NORTH, contentPane);
         layout.putConstraint(SpringLayout.WEST, off, 120, SpringLayout.WEST, contentPane);
+
         dialog.setContentPane(contentPane);
         dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
         dialog.setSize(450, 400);

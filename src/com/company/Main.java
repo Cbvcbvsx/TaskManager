@@ -1,6 +1,7 @@
 package com.company;
 
 import java.io.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -24,6 +25,7 @@ public class Main {
       contact1.add("Телефон");
       ArrayList <String> contact2 = new ArrayList();
       contact2.add("ФИО1");
+
       Task task1 = new Task ("Курсач","Очень срочно", new Date(), contact1);
       Task task2 = new Task ("ДЗ по радиотеху","Не сильно срочно", new Date(), contact2);
       Task [] arrTask = new Task[] {task1,task2};
