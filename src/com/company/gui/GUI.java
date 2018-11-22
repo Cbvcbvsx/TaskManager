@@ -1,13 +1,16 @@
-package com.company;
+package com.company.gui;
+
+import com.company.Task;
+import com.company.Tasks;
+import com.company.gui.ChangeTaskGUI;
+import com.company.gui.CreatorTaskGUI;
+import com.company.gui.ErrorGUI;
 
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.util.ArrayList;
-import java.util.Date;
 import java.awt.event.*;
 import java.io.*;
-import javax.imageio.*;
 
 
 import static com.company.Save.writeTasks;
@@ -65,7 +68,7 @@ public class GUI extends JFrame {
         // Наполнение модели данными
         tasks.sortByDate();
         for (int i = 0; i < tasks.getNum(); i++)
-            tableModel.addRow(new Object[]{tasks.getTask(i).getName(), tasks.getTask(i).getDescription(), tasks.getTask(i).getDate(), tasks.getTask(i).getContacts()});
+            tableModel.addRow(new Object[]{tasks.getTask(i).getName(), tasks.getTask(i).getDescription(), tasks.getTask(i).getDate(), tasks.getTask(i).arrayListToString()});
         // Создание таблицы на основании модели данных
         table1 = new JTable(tableModel)
         {
@@ -87,11 +90,11 @@ public class GUI extends JFrame {
                 new CreatorTaskGUI(frame, task);
                 int idx = tasks.addTaskByDate(task);
                 // Вставка новой строки после выделенной
-                tableModel.insertRow(idx+1, new Object[]{
+                tableModel.insertRow(idx, new Object[]{
                         tasks.getTask(idx).getName(),
                         tasks.getTask(idx).getDescription(),
                         tasks.getTask(idx).getDate(),
-                        tasks.getTask(idx).getContacts()});
+                        tasks.getTask(idx).arrayListToString()});
                 //Сохранение изменений
                 try (Writer wr = new FileWriter("save.txt")) {
                     writeTasks(tasks, wr);
@@ -106,10 +109,15 @@ public class GUI extends JFrame {
         change.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 int idx = table1.getSelectedRow();
+                if(idx==-1)
+                {
+                    new ErrorGUI(frame,"Выберите строку");
+                    return;
+                }
                 new ChangeTaskGUI(frame,tasks.getTask(idx));
                 tableModel.removeRow(idx);
                 tableModel.insertRow(idx, new Object[]{tasks.getTask(idx).getName(), tasks.getTask(idx).getDescription(),
-                        tasks.getTask(idx).getDate(), tasks.getTask(idx).getContacts()});
+                        tasks.getTask(idx).getDate(), tasks.getTask(idx).arrayListToString()});
                 //Сохранение изменений
                 try (Writer wr = new FileWriter("save.txt")) {
                     writeTasks(tasks, wr);

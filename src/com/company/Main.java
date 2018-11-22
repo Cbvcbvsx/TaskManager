@@ -1,7 +1,8 @@
 package com.company;
 
+import com.company.gui.GUI;
+
 import java.io.*;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -23,6 +24,7 @@ public class Main {
       ArrayList <String> contact1 = new ArrayList();
       contact1.add("ФИО");
       contact1.add("Телефон");
+      contact1.add("ФИО");
       ArrayList <String> contact2 = new ArrayList();
       contact2.add("ФИО1");
 

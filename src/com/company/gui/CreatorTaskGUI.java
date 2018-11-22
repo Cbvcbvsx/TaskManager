@@ -1,5 +1,7 @@
-package com.company;
+package com.company.gui;
 
+
+import com.company.Task;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -41,7 +43,7 @@ public class CreatorTaskGUI extends JFrame {//создание задачи че
                     contact1.add(((JTextField) field4).getText());
                     task.setContacts(contact1);
                 }
-                catch(Exception ex) {ex.printStackTrace();}
+                catch(Exception ex) {new ErrorGUI(frame,"Неверная запись даты");}
                 dialog.dispose();
             }
         });
@@ -96,6 +98,8 @@ public class CreatorTaskGUI extends JFrame {//создание задачи че
         layout.putConstraint(SpringLayout.NORTH, off, 150, SpringLayout.NORTH, contentPane);
         layout.putConstraint(SpringLayout.WEST, off, 120, SpringLayout.WEST, contentPane);
         dialog.setContentPane(contentPane);
+        dialog.setLocationRelativeTo(frame);//вывод окна в области frame
+        dialog.setResizable(false);//запрет на изменение размеров окна
         dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
         dialog.setSize(450, 400);
         dialog.setVisible(true);

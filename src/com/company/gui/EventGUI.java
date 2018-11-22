@@ -1,4 +1,6 @@
-package com.company;
+package com.company.gui;
+
+import com.company.Tasks;
 
 import javax.swing.*;
 import java.awt.*;
@@ -26,7 +28,6 @@ public class EventGUI extends JFrame {//вывод информации о ср�
                 dispose();
             }
         });
-
         panel.add(hold);
         panel.add(off);
         setContentPane(panel);

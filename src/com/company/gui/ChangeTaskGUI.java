@@ -1,5 +1,7 @@
-package com.company;
+package com.company.gui;
 
+
+import com.company.Task;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,7 +9,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Locale;
 import javax.swing.JFrame;
 
@@ -31,7 +32,7 @@ public class ChangeTaskGUI extends JFrame {//создание задачи че�
         Component field1 = new JTextField(task.getName(),15);
         Component field2 = new JTextField(task.getDescription(),15);
         Component field3 = new JTextField(task.getDate().toString(),15);
-        Component field4 = new JTextField(task.getContacts().toString(),15);
+        Component field4 = new JTextField(task.arrayListToString(),15);
         hold.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try{
@@ -43,7 +44,7 @@ public class ChangeTaskGUI extends JFrame {//создание задачи че�
                 contact1.add(((JTextField) field4).getText());
                 task.setContacts(contact1);
                 }
-                catch (Exception ex) { ex.printStackTrace();}
+                catch (Exception ex) { new ErrorGUI(frame,"Неверная запись даты");}
                 dialog.dispose();
             }
         });
@@ -97,7 +98,8 @@ public class ChangeTaskGUI extends JFrame {//создание задачи че�
 
         layout.putConstraint(SpringLayout.NORTH, off, 150, SpringLayout.NORTH, contentPane);
         layout.putConstraint(SpringLayout.WEST, off, 120, SpringLayout.WEST, contentPane);
-
+        dialog.setResizable(false);//запрет на изменение размеров окна
+        dialog.setLocationRelativeTo(frame);//вывод окна в области frame
         dialog.setContentPane(contentPane);
         dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
         dialog.setSize(450, 400);

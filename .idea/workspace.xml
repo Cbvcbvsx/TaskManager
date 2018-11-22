@@ -3,20 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="13400fbe-90b8-423a-a960-23328852e62d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/CreatorTaskGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manager/com/company/CreatorTaskGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/CreatorTaskGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manager/com/company/CreatorTaskGUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/CreatorTaskGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manager/com/company/CreatorTaskGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/ChangeTaskGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/ChangeTaskGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/ChangeTaskGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/CreatorTaskGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/CreatorTaskGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/CreatorTaskGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manager/com/company/Event.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/EventGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/EventGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/EventGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI$3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/GUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manager/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/Save.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manager/com/company/Save.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manager/com/company/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/com/company/Tasks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manager/com/company/Tasks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/save.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CreatorTaskGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CreatorTaskGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ChangeTaskGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/ChangeTaskGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/CreatorTaskGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/CreatorTaskGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/EventGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/EventGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/gui/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Save.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Tasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Tasks.java" afterDir="false" />
     </list>
@@ -30,32 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Setting.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Setting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Task.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Task.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,8 +58,20 @@
       <file leaf-file-name="Tasks.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Tasks.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-470">
+              <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErrorGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/gui/ErrorGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
+              <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,17 +79,17 @@
       <file leaf-file-name="Save.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Save.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+            <state relative-caret-position="204">
+              <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="GUI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/gui/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="93" column="59" lean-forward="true" selection-start-line="93" selection-start-column="59" selection-end-line="93" selection-end-column="59" />
+            <state relative-caret-position="-1769">
+              <caret line="89" column="48" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,28 +98,24 @@
         </entry>
       </file>
       <file leaf-file-name="ChangeTaskGUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/ChangeTaskGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/gui/ChangeTaskGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="43" selection-end-column="43" />
+            <state relative-caret-position="1666">
+              <caret line="100" column="70" lean-forward="true" selection-start-line="100" selection-start-column="70" selection-end-line="100" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1998#1999#0" expanded="true" />
-                <element signature="e#2046#2047#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="CreatorTaskGUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/CreatorTaskGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/gui/CreatorTaskGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="40" column="66" lean-forward="true" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+            <state relative-caret-position="1257">
+              <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1870#1871#0" expanded="true" />
-                <element signature="e#1918#1919#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,23 +124,19 @@
       <file leaf-file-name="Event.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Event.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="EventGUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/EventGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/gui/EventGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="425">
+              <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#640#641#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,21 +161,28 @@
         <option value="$PROJECT_DIR$/src/com/company/Setting.java" />
         <option value="$PROJECT_DIR$/src/com/company/CreatorTask.java" />
         <option value="$PROJECT_DIR$/src/com/company/TaskManager.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Event.java" />
         <option value="$PROJECT_DIR$/src/com/company/EventGUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/TimeDemon.java" />
         <option value="$PROJECT_DIR$/src/com/company/Tray.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Save.java" />
-        <option value="$PROJECT_DIR$/src/com/company/ChangeTaskGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Contact.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/Task.java" />
         <option value="$PROJECT_DIR$/src/com/company/CreatorTaskGUI.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Tasks.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/ErrorGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Event.java" />
         <option value="$PROJECT_DIR$/src/com/company/GUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/ChangeTaskGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Save.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Tasks.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gui/CreatorTaskGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gui/EventGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gui/ErrorGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gui/ChangeTaskGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/gui/GUI.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="12" />
     <option name="width" value="1101" />
     <option name="height" value="867" />
@@ -189,7 +192,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,8 +216,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,8 +272,8 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.325887" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298292" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.325887" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -279,8 +282,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39947438" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -290,28 +293,28 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12125" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.325887" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.153125" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39947438" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3298292" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3285151" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -326,34 +329,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/Tasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="85" selection-start-line="40" selection-start-column="85" selection-end-line="40" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Save.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/CreatorTaskGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/save.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -361,7 +336,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/gui/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2193">
           <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
@@ -419,7 +394,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/gui/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
           <caret line="65" column="164" selection-start-line="65" selection-start-column="164" selection-end-line="65" selection-end-column="164" />
@@ -463,7 +438,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/gui/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
@@ -504,7 +479,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/gui/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
@@ -545,7 +520,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/gui/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
@@ -579,7 +554,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/gui/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
@@ -606,7 +581,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/gui/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
@@ -627,13 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/save.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/TimeDemon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -646,27 +614,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Tray.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/EventGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Save.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Setting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -674,17 +621,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Event.java">
+    <entry file="file://$PROJECT_DIR$/save.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="34">
+          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Contact.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/gui/EventGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Task.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -693,49 +678,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Tasks.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-470">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/gui/ErrorGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/CreatorTaskGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="40" column="66" lean-forward="true" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1870#1871#0" expanded="true" />
-            <element signature="e#1918#1919#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/ChangeTaskGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="43" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
-            <element signature="e#2046#2047#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Save.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="93" column="59" lean-forward="true" selection-start-line="93" selection-start-column="59" selection-end-line="93" selection-end-column="59" />
+        <state relative-caret-position="204">
+          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/gui/CreatorTaskGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1257">
+          <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/gui/ChangeTaskGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="100" column="70" lean-forward="true" selection-start-line="100" selection-start-column="70" selection-end-line="100" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/gui/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1769">
+          <caret line="89" column="48" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

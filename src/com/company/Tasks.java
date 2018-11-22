@@ -63,20 +63,23 @@ public class Tasks {
         Task[] arr = new Task[tasks.length + 1];
         boolean flag = false;
         int cnt=0;
-        for (int i = 0; i < tasks.length; i++) {
-            if (tasks[i].getDate().before( task.getDate())) {
-                arr[i] = tasks[i];
-                cnt++;
-            }
-            if (task.getDate().before( tasks[i].getDate()) & !flag) {
-                arr[i] = task;
-                flag=true;
+        for (int i = 0; i < arr.length; i++) {
+            if(i<tasks.length) {
+                if (tasks[i].getDate().before(task.getDate())) {
+                    arr[i] = tasks[i];
+                    cnt++;
+                    continue;
+                }
+                if (task.getDate().before(tasks[i].getDate()) & !flag) {
+                    arr[i] = task;
+                    flag = true;
+                } else {
+                    if (task.getDate().before(tasks[i].getDate()))
+                        arr[i] = tasks[i - 1];
+                }
             }
             else
-            {
-                if(task.getDate().before( tasks[i].getDate()))
-                    arr[i] = tasks[i-1];
-            }
+                arr[i]=task;
         }
         this.tasks=arr;
         return cnt;

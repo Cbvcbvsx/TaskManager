@@ -27,4 +27,14 @@ public class Task {
     public void setDescription(String description) { this.description=description; }
     public void setDate(Date date) { this.date=date; }
     public void setContacts(ArrayList <String> contacts){ this.contacts=contacts; }
+    public String arrayListToString()
+    {
+        String s="";
+        for(int i=0; i<contacts.size()-1; i++)
+        {
+            s+=contacts.get(i) + ", ";
+        }
+        s+=contacts.get(contacts.size()-1);
+        return s;
+    }
 }
