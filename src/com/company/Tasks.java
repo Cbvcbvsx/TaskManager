@@ -1,6 +1,41 @@
 package com.company;
 
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.StringTokenizer;
+
 public class Tasks {
+    static BufferedReader reader;
+
+    static {
+        try {
+            reader = new BufferedReader((new FileReader(new File("Tasks.txt"))));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            try {
+                FileWriter fw = new FileWriter(new File("Tasks.txt"));
+                fw.write("0");
+                fw.close();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        }
+    }
+
+    static StringTokenizer tokenizer;
+
+
+    public static String tokenizer() throws Exception {
+        while (tokenizer == null || !tokenizer.hasMoreTokens()) {
+            tokenizer = new StringTokenizer(reader.readLine());
+        }
+        return (tokenizer.nextToken());
+    }
+
+    public static int nextInt() throws Exception {
+        return (Integer.parseInt(tokenizer()));
+    }
 
     private Task [] tasks;
 
@@ -127,5 +162,61 @@ public class Tasks {
                 }
             }
         }
+    }
+    public boolean writerTasks() throws IOException//запись в txt
+    {
+        try {
+            File file = new File("Tasks.txt");
+            FileWriter fileWriter = new FileWriter(file);
+            fileWriter.write(this.tasks.length+"");
+            fileWriter.write('\n');
+            for (int i=0;i<tasks.length;i++)
+            {
+                fileWriter.write(tasks[i].getName()+"");
+                fileWriter.write('\n');
+                fileWriter.write(tasks[i].getDescription()+"");
+                fileWriter.write('\n');
+                fileWriter.write(tasks[i].getDate()+"");
+                fileWriter.write('\n');
+                fileWriter.write(tasks[i].getContacts().size()+"");
+                fileWriter.write('\n');
+                for (int j=0;j<tasks[i].getContacts().size();j++)
+                {
+                    fileWriter.write(tasks[i].getContacts().get(j)+"");
+                    fileWriter.write('\n');
+                }
+            }
+            fileWriter.close();
+            return true;
+        }
+        catch (Exception e)
+        {
+            File file = new File("Tasks.txt");
+            FileWriter fileReader = new FileWriter(file);
+            fileReader.close();
+            return false;
+        }
+    }
+    public Tasks readerTasks() throws Exception//чтение из txt
+    {
+        Tasks tasks;
+        ArrayList<String> contacts;
+
+
+            tasks = new Tasks(nextInt());
+            for (int i=0;i<tasks.tasks.length;i++)
+            {
+                contacts=new ArrayList<String>();
+                tasks.tasks[i].setName(reader.readLine());
+                tasks.tasks[i].setDescription(reader.readLine());
+                tasks.tasks[i].setDateOfString(reader.readLine());
+                for (int j=0;j<nextInt();j++)
+                {
+                   contacts.add(reader.readLine());
+                }
+                tasks.tasks[i].setContacts(contacts);
+            }
+            return tasks;
+
     }
 }
