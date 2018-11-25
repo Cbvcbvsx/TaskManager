@@ -2,9 +2,14 @@ package com.company;
 
 import com.company.gui.GUI;
 
+import javax.swing.*;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Date;
+
+//import static com.company.gui.GUI.app;
 
 public class Main {
 

@@ -7,6 +7,7 @@ import com.company.gui.CreatorTaskGUI;
 import com.company.gui.ErrorGUI;
 
 import java.awt.*;
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.*;
@@ -17,7 +18,7 @@ import static com.company.Save.writeTasks;
 
 public class GUI extends JFrame {
     private JMenuBar mb = new JMenuBar();
-
+    public static GUI app;
     private JMenu m = new JMenu("Настройки");
     private JMenu m1 = new JMenu("Настройки сохранения");
     private JMenu m2 = new JMenu("Настройки оповещения");
@@ -40,6 +41,7 @@ public class GUI extends JFrame {
     public GUI(Tasks tasks) throws IOException {
         JFrame frame = new JFrame("Планировщик задач");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLocation(500,300);
         frame.setSize(600, 300);
         mb.add(m);
         // организуем переключатели в логическую группу(чтобы можно было выбрать только 1 параметр)
@@ -159,11 +161,11 @@ public class GUI extends JFrame {
         frame.getContentPane().add(buttons, "South");
 
 
-        /*iconTr = new TrayIcon(ImageIO.read(new File("4d87fef27a.jpg")), "Демонстрация сворачивания в трей");
+        iconTr = new TrayIcon(ImageIO.read(new File("Безымянный1.png")), "Демонстрация сворачивания в трей");
         iconTr.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ev) {
-                setVisible(true);
-                setState(JFrame.NORMAL);
+                frame.setVisible(true);
+                frame.setState(JFrame.NORMAL);
                 removeTr();
             }
         });
@@ -195,19 +197,19 @@ public class GUI extends JFrame {
                 iconTr.setToolTip("Двойной щелчок - развернуть");
             }
         };
-
         iconTr.addMouseMotionListener(mouM);
-        addWindowStateListener(new WindowStateListener() {
+        frame.addWindowStateListener(new WindowStateListener() {
             public void windowStateChanged(WindowEvent ev) {
                 if (ev.getNewState() == JFrame.ICONIFIED) {
-                    setVisible(false);
+                    frame.setVisible(false);
+                    new TrayWindow(tasks);
                     addT();
                 }
             }
         });
-
-
+        frame.setVisible(true);
     }
+
     private void removeTr() {
         sT.remove(iconTr);
     }
@@ -217,13 +219,13 @@ public class GUI extends JFrame {
         try {
             sT.add(iconTr);
             if (chetTray == false) {
-                iconTr.displayMessage("Демонстрация сворачивания в трей", "Программа свернулась", TrayIcon.MessageType.INFO);
+                iconTr.displayMessage("Диспетчер задач", "Программа свернулась", TrayIcon.MessageType.INFO);
             }
             chetTray = true;
         } catch (AWTException ex) {
             ex.printStackTrace();
-        }*/
-        frame.setVisible(true);
+        }
     }
+
 }
 

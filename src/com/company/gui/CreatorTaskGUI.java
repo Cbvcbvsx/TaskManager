@@ -21,29 +21,36 @@ public class CreatorTaskGUI extends JFrame {//создание задачи че
     private Component label1 = new JLabel("Название");
     private Component label2 = new JLabel("Описание");
     private Component label3 = new JLabel("Дата");
-    private Component label4 = new JLabel("Контакты");
+    private Component label41 = new JLabel("Контакт1");
+    private Component label42 = new JLabel("Контакт2");
+    private Component label43 = new JLabel("Контакт3");
+    private Component label44 = new JLabel("Контакт4");
     private Component field1 = new JTextField(15);
     private Component field2 = new JTextField(15);
     private Component field3 = new JTextField(15);
-    private Component field4 = new JTextField(15);
+    private Component field41 = new JTextField(15);
+    private Component field42 = new JTextField(15);
+    private Component field43 = new JTextField(15);
+    private Component field44 = new JTextField(15);
 
     public CreatorTaskGUI(JFrame frame, Task task) {
         JDialog dialog = new JDialog(frame, "Событие", true);
         JButton hold = new JButton("Сохранить");
         JButton off = new JButton("Не сохранять");
-        JButton add = new JButton("Добавить");
+        //JButton add = new JButton("Добавить");
         hold.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                try {
-                    task.setName(((JTextField) field1).getText());
-                    task.setDescription(((JTextField) field2).getText());
-                    SimpleDateFormat format = new SimpleDateFormat("EEE MMM dd hh:mm:ss ZZZ yyyy", Locale.US);
-                    task.setDate((format.parse(((JTextField) field3).getText())));
-                    ArrayList<String> contact1 = new ArrayList();
-                    contact1.add(((JTextField) field4).getText());
-                    task.setContacts(contact1);
-                }
-                catch(Exception ex) {new ErrorGUI(frame,"Неверная запись даты");}
+                    try {
+                        task.setName(((JTextField) field1).getText());
+                        task.setDescription(((JTextField) field2).getText());
+                        SimpleDateFormat format = new SimpleDateFormat("EEE MMM dd hh:mm:ss ZZZ yyyy", Locale.US);
+                        task.setDate((format.parse(((JTextField) field3).getText())));
+                        ArrayList<String> contact1 = new ArrayList();
+                        contact1.add(((JTextField) field41).getText());
+                        task.setContacts(contact1);
+                    } catch (Exception ex) {
+                        new ErrorGUI(frame, "Неверная запись даты");
+                    }
                 dialog.dispose();
             }
         });
@@ -60,15 +67,22 @@ public class CreatorTaskGUI extends JFrame {//создание задачи че
         contentPane.setLayout(layout);
         contentPane.add(hold);
         contentPane.add(off);
-        contentPane.add(add);
+        //contentPane.add(add);
         contentPane.add(field1);
         contentPane.add(label1);
         contentPane.add(field2);
         contentPane.add(label2);
         contentPane.add(field3);
         contentPane.add(label3);
-        contentPane.add(field4);
-        contentPane.add(label4);
+        contentPane.add(field41);
+        contentPane.add(label41);
+        contentPane.add(field42);
+        contentPane.add(label42);
+        contentPane.add(field43);
+        contentPane.add(label43);
+        contentPane.add(field44);
+        contentPane.add(label44);
+
         layout.putConstraint(SpringLayout.WEST , label1, 10, SpringLayout.WEST , contentPane);
         layout.putConstraint(SpringLayout.NORTH, label1, 25, SpringLayout.NORTH, contentPane);
         layout.putConstraint(SpringLayout.NORTH, field1, 25, SpringLayout.NORTH, contentPane);
@@ -84,12 +98,12 @@ public class CreatorTaskGUI extends JFrame {//создание задачи че
         layout.putConstraint(SpringLayout.NORTH, field3, 85, SpringLayout.NORTH, contentPane);
         layout.putConstraint(SpringLayout.WEST , field3, 80, SpringLayout.WEST , contentPane);
 
-        layout.putConstraint(SpringLayout.WEST , label4, 10, SpringLayout.WEST , contentPane);
-        layout.putConstraint(SpringLayout.NORTH, label4, 115, SpringLayout.NORTH, contentPane);
-        layout.putConstraint(SpringLayout.NORTH, field4, 115, SpringLayout.NORTH, contentPane);
-        layout.putConstraint(SpringLayout.WEST , field4, 80, SpringLayout.WEST , contentPane);
-        layout.putConstraint(SpringLayout.NORTH, add, 115, SpringLayout.NORTH, contentPane);
-        layout.putConstraint(SpringLayout.WEST , add, 250, SpringLayout.WEST , contentPane);
+        layout.putConstraint(SpringLayout.WEST , label41, 10, SpringLayout.WEST , contentPane);
+        layout.putConstraint(SpringLayout.NORTH, label41, 115, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.NORTH, field41, 115, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.WEST , field41, 80, SpringLayout.WEST , contentPane);
+        /*layout.putConstraint(SpringLayout.NORTH, add, 115, SpringLayout.NORTH, contentPane);
+        layout.putConstraint(SpringLayout.WEST , add, 250, SpringLayout.WEST , contentPane);*/
 
 
         layout.putConstraint(SpringLayout.NORTH, hold, 150, SpringLayout.NORTH, contentPane);
@@ -97,6 +111,9 @@ public class CreatorTaskGUI extends JFrame {//создание задачи че
 
         layout.putConstraint(SpringLayout.NORTH, off, 150, SpringLayout.NORTH, contentPane);
         layout.putConstraint(SpringLayout.WEST, off, 120, SpringLayout.WEST, contentPane);
+
+
+
         dialog.setContentPane(contentPane);
         dialog.setLocationRelativeTo(frame);//вывод окна в области frame
         dialog.setResizable(false);//запрет на изменение размеров окна
