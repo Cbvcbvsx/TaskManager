@@ -3,9 +3,16 @@ package com.company;
 import com.company.gui.EventGUI;
 
 public class Event {
-    public static void evented(Tasks tasks)
+   static boolean b=true;
+    public static void evented(Tasks tasks) throws InterruptedException {
+        if (b) {
+            b=false;
+            new EventGUI(tasks);
+        }
+
+    }
+    public static void setB()
     {
-        new EventGUI(tasks);
-        tasks.deleteTask(0);
+        b=true;
     }
 }

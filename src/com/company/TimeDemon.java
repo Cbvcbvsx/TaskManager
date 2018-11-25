@@ -12,14 +12,27 @@ public class TimeDemon extends Thread{
     }
     @Override
     public void run() {
-        date = new Date() ;
-
-        if (((date).compareTo(tasks.getTask(0).getDate()))<=0)
-            Event.evented(tasks);
+        for (; ; ) {
+            date = new Date();
+try {
+    if (((date).compareTo(tasks.getTask(0).getDate())) >= 0) {
         try {
-            sleep(100);
+            Event.evented(tasks);
+            sleep(1500);
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }
+    }
+}
+catch (Exception e)
+{
+    e.printStackTrace();
+}
+            try {
+                sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 

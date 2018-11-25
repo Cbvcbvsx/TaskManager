@@ -2,14 +2,9 @@ package com.company;
 
 import com.company.gui.GUI;
 
-import javax.swing.*;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Date;
-
-//import static com.company.gui.GUI.app;
 
 public class Main {
 
@@ -38,5 +33,8 @@ public class Main {
       Task [] arrTask = new Task[] {task1,task2};
       Tasks tasks= new Tasks(arrTask);
       GUI app = new GUI(tasks);
+       TimeDemon timeDemon = new TimeDemon(tasks);
+       timeDemon.start();
+
    }
 }
